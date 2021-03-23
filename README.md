@@ -33,7 +33,14 @@ Add the following to your `config.php`:
   )
 ```
 
-Flarum's default disk names are `flarum-assets` and `flarum-avatars`.
+Add the following row to your settings table:
+
+```
+key: 'disk_driver.DISK_NAME'
+value: 'azure'
+```
+
+Flarum's default disk names are `flarum-assets` and `flarum-avatars`. I recommend testing with `flarum-assets`.
 
 ### Updating
 
